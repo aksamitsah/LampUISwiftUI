@@ -43,6 +43,7 @@ struct LightShape: Shape {
 
 
 struct FinalView: View {
+    
     @State private var isLampOn = false
     @State private var dragOffset: CGSize = .zero
     @State private var isDragging = false
@@ -119,7 +120,7 @@ struct FinalView: View {
                         .offset(x: -40)
                         .foregroundStyle(isLampOn ? .green : .red)
                     
-                }.offset(x: 170,y: 420)
+                }.offset(x: 170,y: 420).padding(.bottom, 80)
                 
                     
                 
